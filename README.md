@@ -38,7 +38,7 @@ From [Twitter documentation official libraries](https://developer.twitter.com/en
     Requests / 15-min window (user auth)	900
     Requests / 15-min window (app auth)	1500
     ```
-* Used __auth key__ found in GitHub [Many Thanks!](https://github.com/cyang-prosper/spring-boot-kubernetes/blob/2aa5ad585603484893d9c201919d91a2f86922a6/spec-files/twitter-acct-configmap.yml)
+* Used __auth key__ 
 
     If you want to use your own Twitter _authentication keys_, set as JMV parameters:
     
@@ -46,8 +46,9 @@ From [Twitter documentation official libraries](https://developer.twitter.com/en
     * `OAuthConsumerKey`
     * `OAuthAccessToken` 
     * `OAuthAccessTokenSecret`
- 
-as `-DOAuthConsumerSecret=XXXXX -DOAuthConsumerKey=XXXXX -DOAuthAccessToken=XXXXX -DOAuthAccessTokenSecret=XXXXX`
+    as `-DOAuthConsumerSecret=XXXXX -DOAuthConsumerKey=XXXXX -DOAuthAccessToken=XXXXX -DOAuthAccessTokenSecret=XXXXX`
+
+    Or change [twitter.properties](src/java/resources/twitter.properties)
 
 * In order to reduce requests to Twitter, Twitter provides [Pagination feature](https://developer.twitter.com/en/docs/tweets/timelines/guides/working-with-timelines)
 
